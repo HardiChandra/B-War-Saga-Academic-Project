@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    
+    <servlet>
+        <servlet-name>doUpdateIsiVoucher</servlet-name>
+        <servlet-class>servlet.doUpdateIsiVoucher</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>doUpdateIsiVoucher</servlet-name>
+        <url-pattern>/doUpdateIsiVoucher</url-pattern>  
+    </servlet-mapping>
+    
+    <servlet>
+	<servlet-name>doBeliItem</servlet-name>
+	<servlet-class>servlet.doBeliItem</servlet-class>
+    </servlet>
+          
+    <servlet-mapping>
+        <servlet-name>doBeliItem</servlet-name>
+        <url-pattern>/doBeliItem</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>doUpdateProfile</servlet-name>
+        <servlet-class>servlet.doUpdateProfile</servlet-class>
+    </servlet>
+        
+    <servlet-mapping>
+        <servlet-name>doUpdateProfile</servlet-name>
+        <url-pattern>/doUpdateProfile</url-pattern>
+    </servlet-mapping>      
+    
+    <servlet>
+        <servlet-name>doAddVoucher</servlet-name>
+        <servlet-class>servlet.doAddVoucher</servlet-class>
+    </servlet>
+            
+    <servlet-mapping>
+        <servlet-name>doAddVoucher</servlet-name>
+        <url-pattern>/doAddVoucher</url-pattern>
+    </servlet-mapping>     
+    
+    <servlet>
+            <servlet-name>doDelete</servlet-name>
+            <servlet-class>servlet.doDelete</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>doDelete</servlet-name>
+            <url-pattern>/doDelete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+                <servlet-name>doDeleteItem</servlet-name>
+                <servlet-class>servlet.doDeleteItem</servlet-class>
+            </servlet>
+            <servlet-mapping>
+                <servlet-name>doDeleteItem</servlet-name>
+                <url-pattern>/doDeleteItem</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+                    <servlet-name>doUpdateItem</servlet-name>
+                    <servlet-class>servlet.doUpdateItem</servlet-class>
+                </servlet>
+                <servlet-mapping>
+                    <servlet-name>doUpdateItem</servlet-name>
+                    <url-pattern>/doUpdateItem</url-pattern>
+    </servlet-mapping>
+      
+	<servlet>
+                    <servlet-name>doReg</servlet-name>
+                    <servlet-class>servlet.doReg</servlet-class>
+                </servlet>
+                <servlet-mapping>
+                    <servlet-name>doReg</servlet-name>
+                    <url-pattern>/doReg</url-pattern>     
+    </servlet-mapping>
+	
+	<servlet>
+                    <servlet-name>doLogin</servlet-name>
+                    <servlet-class>servlet.doLogin</servlet-class>
+                </servlet> 
+                <servlet-mapping>
+                    <servlet-name>doLogin</servlet-name>
+                    <url-pattern>/doLogin</url-pattern>
+    </servlet-mapping>
+	
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+    </web-app>
